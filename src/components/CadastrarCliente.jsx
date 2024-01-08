@@ -1,9 +1,7 @@
 import React from 'react'
 
-function CadastrarCliente() {
+export default function CadastrarCliente() {
   return (
     <div>CadastrarCliente</div>
   )
 }
-
-export default CadastrarCliente

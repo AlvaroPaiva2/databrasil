@@ -1,25 +1,17 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import CadastrarCliente from './src/components/CadastrarCliente'
 import Implementar from './src/components/Implementar'
-import ReactNavigator from './src/components/ReactNavigator'
-import { NavigationContainer } from '@react-navigation/native';
 
+const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Databrasil</Text>
-      <StatusBar style="auto" />
-    </View>
+  <NavigationContainer>
+   <Stack.Navigator initialRouteName='CadastrarCliente'>
+    <Stack.Screen name="Cadastro" component={CadastrarCliente} />
+   </Stack.Navigator>
+  </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
