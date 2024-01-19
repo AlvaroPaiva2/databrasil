@@ -28,8 +28,8 @@ export default function LoginCliente({ navigation }) {
       <Text style={styles.socialLoginText}>Faça login utilizando</Text>
       <View style={styles.socialIconsContainer}>
         <Button onPress={handleGoogleAuthSignIn} textColor={'#ffbf65'} size={100} style={styles.socialButton} icon="google"></Button>
-        <Button onPress textColor={'#1E2F97'} style={styles.socialButton} icon="linkedin"></Button>
-        <Button onPress textColor={'#1E2F97'} style={styles.socialButton} icon="facebook"></Button>
+        <Button textColor={'#1E2F97'} style={styles.socialButton} icon="linkedin"></Button>
+        <Button textColor={'#1E2F97'} style={styles.socialButton} icon="facebook"></Button>
       </View>
     </View>
 </View>

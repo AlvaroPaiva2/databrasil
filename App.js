@@ -7,7 +7,7 @@ import UserHomePage from "./src/components/UserHomePage";
 
 const Stack = createNativeStackNavigator();
 
-export default function App() {
+export default function App() {0
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Login" screenOptions={{
