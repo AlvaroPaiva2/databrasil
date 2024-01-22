@@ -17,7 +17,7 @@ export default function LoginCliente({ navigation }) {
 <View style={styles.background}>
     <Image style={styles.homeMainImage} source={ImageList.loginImage} ></Image>
     <Text style={styles.mainText}>DataBrasil</Text>
-    <Text style={styles.mainParagraph}>Dados ao seu alcance aqui na maior plataforma do brasil</Text>
+    <Text style={styles.mainParagraph}>Dados ao seu alcance aqui na maior plataforma do brasil.</Text>
     <View style={styles.buttonContainer}>
       <Button onPress={handleGoogleAuthSignIn} textColor={'#FFFF'} labelStyle={{fontWeight: 600 }} style={styles.loginButton}>
         Logar
